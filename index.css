@@ -10,6 +10,26 @@
     object-fit: cover; /*ARREGLA LA IMAGEN ESTIRADA*/
     filter: grayscale(70%); /*PONE UN FILTRO */
 }
+#main #carousel{
+    position: relative;
+}
+#carousel .overlay{
+    position: absolute;/*El overlay se expande por el alto y ancho del padre*/
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    background-color:rgba(0,0,0,0.5);
+    color:white;
+    z-index: 1; /*PARA QUE SE MUESTRE EL TEXTO*/
+    text-align: right;
+   
+}
+#carousel .overlay .container,
+#carousel .overlay .row{
+    align-items: center;
+    height: 100%;
+}
 #footer{
     background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472)
 }
